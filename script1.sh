@@ -2,20 +2,29 @@
 # set -euo pipefail
 
 # arr_url=()
-# echo "Count of requests:"
+echo "Count of requests:"
+# read cnt_req
+cnt_req=2
 
-time_namelookup=0.0
-time_connect=0.0
-time_appconnect=0.0
-time_pretransfer=0.0
-time_starttransfer=0.0
+url1_namelookup=0.0
+url1_connect=0.0
+url1_appconnect=0.0
+url1_pretransfer=0.0
+url1_starttransfer=0.0
 
-read cnt_req
-arr_metrics=("%{time_namelookup}" 
-			"%{time_connect}" 
-			"%{time_appconnect}" 
-			"%{time_pretransfer}" 
-			"%{time_starttransfer}")
+url2_namelookup=0.0
+url2_connect=0.0
+url2_appconnect=0.0
+url2_pretransfer=0.0
+url2_starttransfer=0.0
+
+url1_MIN=0.0
+url1_MAX=0.0
+url1_AVG=0.0
+
+url2_MIN=0.0
+url2_MAX=0.0
+url2_AVG=0.0
 
 # # Заполняем массив URL'ами, на которые будем делать запросы
 # echo "Insert the URLs:"
@@ -32,25 +41,24 @@ arr_metrics=("%{time_namelookup}"
 
 arr_url=("https://68.img.avito.st/image/1/rS2IB7axAcS-sIPJ3gH0BXGkAcA0pgvG" "https://00.img.avito.st/image/1/1cs1qbaxeSIDHvsvE_qxrtcKeSaJCHMg")
 
-# y=$(curl -o /dev/null -w "%{time_namelookup}" $url1)
-# echo "=============="
-# echo "Metric: time_namelookup"
-# echo $y
-
 metrics_func(){
-curl -o /dev/null -w "${arr_metrics[0]} ${arr_metrics[1]} ${arr_metrics[2]} ${arr_metrics[3]} ${arr_metrics[4]}" $1
+curl -o /dev/null -w "%{time_namelookup} %{time_connect} %{time_appconnect} %{time_pretransfer} %{time_starttransfer}" $1
 sleep 1
 }
 
 for ((cnt=1; cnt<=$cnt_req; cnt++)); do
 	for url in ${arr_url[@]}; do
-		arr_results=("res")
-		q=$(metrics_func $url)
-		for metric in $q; do
-			arr_results+=( "$metric" )
-			# if [ $metric == ]
-		done
+		arr_results=($(metrics_func $url))
+
 		echo ${arr_results[@]}
+
+		namelookup=${arr_results[0]//,/.}
+		connect=$(echo "${arr_results[1]//,/.} - ${arr_results[0]//,/.}" | bc | sed -e 's/^\./0./' -e 's/^-\./-0./')
+		appconnect=$(echo "${arr_results[2]//,/.} - ${arr_results[1]//,/.}" | bc | sed -e 's/^\./0./' -e 's/^-\./-0./')
+		pretransfer=$(echo "${arr_results[3]//,/.} - ${arr_results[2]//,/.}" | bc | sed -e 's/^\./0./' -e 's/^-\./-0./')
+		starttransfer=$(echo "${arr_results[4]//,/.} - ${arr_results[3]//,/.}" | bc | sed -e 's/^\./0./' -e 's/^-\./-0./')
+
+		echo $namelookup $connect $appconnect $pretransfer $starttransfer
 	done		
 done
 
