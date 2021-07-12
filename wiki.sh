@@ -16,15 +16,27 @@
 # заменить одни символы в определенном элементе массива или во всем массиве на другие.
 # echo ${array[@]//р/Р}
 
+# Деление вещественных чисел 
+# xyz=$(bc<<<"scale=10;$xyz/7" | sed -e 's/^\./0./' -e 's/^-\./-0./')
+
 # Сложение вещественных чисел
 # x=0.01
 # y=0.001 
 # z=$(echo "$x + $y" | bc)
 # echo Sum is $z
 
-arr_results=(0.111 0.2322 0.111111 0.213443)
-echo ${arr_results[@]}
-time_namelookup=${arr_results[0]}
-echo $time_namelookup
-time_connect=$(echo "${arr_results[1]} - ${arr_results[0]}" | bc)
-echo $time_connect
+# arr_results=(0.111 0.2322 0.111111 0.213443)
+# echo ${arr_results[@]}
+# time_namelookup=${arr_results[0]}
+# echo $time_namelookup
+# time_connect=$(echo "${arr_results[1]} - ${arr_results[0]}" | bc)
+# echo $time_connect
+
+
+xyz=0.9666666
+
+echo $xyz
+
+#yz=$(echo "$xyz / 7" | bc | sed -e 's/^\./0./' -e 's/^-\./-0./')
+xyz=$(bc<<<"scale=10;$xyz/7" | sed -e 's/^\./0./' -e 's/^-\./-0./')
+echo $xyz
