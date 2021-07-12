@@ -1,10 +1,17 @@
 #!/bin/bash
-# set -euo pipefail
+set -euo pipefail
+
+metrics_func(){
+curl -o /dev/null -w "%{time_namelookup} %{time_connect} %{time_appconnect} %{time_pretransfer} %{time_starttransfer}" $1
+sleep 1
+}
 
 # arr_url=()
 echo "Count of requests:"
-# read cnt_req
-cnt_req=5
+# cnt_req=5
+read cnt_req
+
+arr_url=("https://68.img.avito.st/image/1/rS2IB7axAcS-sIPJ3gH0BXGkAcA0pgvG" "https://00.img.avito.st/image/1/1cs1qbaxeSIDHvsvE_qxrtcKeSaJCHMg")
 
 url1_namelookup=0.0
 url1_connect=0.0
@@ -54,32 +61,9 @@ url2_AVG_appconnect=0.0
 url2_AVG_pretransfer=0.0
 url2_AVG_starttransfer=0.0
 
-xyz=6.6
-# # Заполняем массив URL'ами, на которые будем делать запросы
-# echo "Insert the URLs:"
-# while true; do
-# 	read url
-# 	if [ "$url" != "" ]
-# 	then
-# 		arr_url+=( "$url" )
-# 	else 
-# 		break
-# 	fi
-# done
-# echo ${arr_url[@]}
-
-arr_url=("https://68.img.avito.st/image/1/rS2IB7axAcS-sIPJ3gH0BXGkAcA0pgvG" "https://00.img.avito.st/image/1/1cs1qbaxeSIDHvsvE_qxrtcKeSaJCHMg")
-
-metrics_func(){
-curl -o /dev/null -w "%{time_namelookup} %{time_connect} %{time_appconnect} %{time_pretransfer} %{time_starttransfer}" $1
-sleep 1
-}
-
 for ((cnt=1; cnt<=$cnt_req; cnt++)); do
 	for url in ${arr_url[@]}; do
 		arr_results=($(metrics_func $url))
-
-		#echo ${arr_results[@]}
 
 		namelookup=${arr_results[0]//,/.}
 		connect=$(echo "${arr_results[1]//,/.} - ${arr_results[0]//,/.}" | bc | sed -e 's/^\./0./' -e 's/^-\./-0./')
@@ -234,14 +218,12 @@ url1_AVG_namelookup=$(bc<<<"scale=6;$url1_AVG_namelookup/$cnt_req" | sed -e 's/^
 url1_AVG_connect=$(bc<<<"scale=6;$url1_AVG_connect/$cnt_req" | sed -e 's/^\./0./' -e 's/^-\./-0./')
 url1_AVG_appconnect=$(bc<<<"scale=6;$url1_AVG_appconnect/$cnt_req" | sed -e 's/^\./0./' -e 's/^-\./-0./')
 url1_AVG_pretransfer=$(bc<<<"scale=6;$url1_AVG_pretransfer/$cnt_req" | sed -e 's/^\./0./' -e 's/^-\./-0./')
-echo $url1_AVG_pretransfer
 url1_AVG_starttransfer=$(bc<<<"scale=6;$url1_AVG_starttransfer/$cnt_req" | sed -e 's/^\./0./' -e 's/^-\./-0./')
 
 url2_AVG_namelookup=$(bc<<<"scale=6;$url2_AVG_namelookup/$cnt_req" | sed -e 's/^\./0./' -e 's/^-\./-0./')
 url2_AVG_connect=$(bc<<<"scale=6;$url2_AVG_connect/$cnt_req" | sed -e 's/^\./0./' -e 's/^-\./-0./')
 url2_AVG_appconnect=$(bc<<<"scale=6;$url2_AVG_appconnect/$cnt_req" | sed -e 's/^\./0./' -e 's/^-\./-0./')
 url2_AVG_pretransfer=$(bc<<<"scale=6;$url2_AVG_pretransfer/$cnt_req" | sed -e 's/^\./0./' -e 's/^-\./-0./')
-echo $url2_AVG_pretransfer
 url2_AVG_starttransfer=$(bc<<<"scale=6;$url2_AVG_starttransfer/$cnt_req" | sed -e 's/^\./0./' -e 's/^-\./-0./')
 
 # echo $url1_MIN_namelookup $url1_MIN_connect $url1_MIN_appconnect $url1_MIN_pretransfer $url1_MIN_starttransfer 
@@ -249,3 +231,5 @@ url2_AVG_starttransfer=$(bc<<<"scale=6;$url2_AVG_starttransfer/$cnt_req" | sed -
 
 # echo $url2_MIN_namelookup $url2_MIN_connect $url2_MIN_appconnect $url2_MIN_pretransfer $url2_MIN_starttransfer 
 # echo $url2_MAX_namelookup $url2_MAX_connect $url2_MAX_appconnect $url2_MAX_pretransfer $url2_MAX_starttransfer
+
+
