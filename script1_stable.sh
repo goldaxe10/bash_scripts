@@ -71,7 +71,7 @@ for ((cnt=1; cnt<=$cnt_req; cnt++)); do
 		pretransfer=$(echo "${arr_results[3]//,/.} - ${arr_results[2]//,/.}" | bc | sed -e 's/^\./0./' -e 's/^-\./-0./')
 		starttransfer=$(echo "${arr_results[4]//,/.} - ${arr_results[3]//,/.}" | bc | sed -e 's/^\./0./' -e 's/^-\./-0./')
 
-		echo "= $namelookup $connect $appconnect $pretransfer $starttransfer"
+		# echo "= $namelookup $connect $appconnect $pretransfer $starttransfer"
 
 		if [[ "$url" == "${arr_url[0]}" ]]
 			then
@@ -211,7 +211,7 @@ for ((cnt=1; cnt<=$cnt_req; cnt++)); do
 				url2_AVG_starttransfer=$(echo "$url2_AVG_starttransfer + $url2_starttransfer" | bc | sed -e 's/^\./0./' -e 's/^-\./-0./')
 		fi
 	done
-echo "== Request done: $cnt =="		
+# echo "== Request done: $cnt =="		
 done
 
 url1_AVG_namelookup=$(bc<<<"scale=6;$url1_AVG_namelookup/$cnt_req" | sed -e 's/^\./0./' -e 's/^-\./-0./')
@@ -226,10 +226,32 @@ url2_AVG_appconnect=$(bc<<<"scale=6;$url2_AVG_appconnect/$cnt_req" | sed -e 's/^
 url2_AVG_pretransfer=$(bc<<<"scale=6;$url2_AVG_pretransfer/$cnt_req" | sed -e 's/^\./0./' -e 's/^-\./-0./')
 url2_AVG_starttransfer=$(bc<<<"scale=6;$url2_AVG_starttransfer/$cnt_req" | sed -e 's/^\./0./' -e 's/^-\./-0./')
 
-# echo $url1_MIN_namelookup $url1_MIN_connect $url1_MIN_appconnect $url1_MIN_pretransfer $url1_MIN_starttransfer 
-# echo $url1_MAX_namelookup $url1_MAX_connect $url1_MAX_appconnect $url1_MAX_pretransfer $url1_MAX_starttransfer
+echo "$cnt_req Retries"
+echo "URL 1: ${arr_url[0]}"
+echo "URL 2: ${arr_url[1]}"
 
-# echo $url2_MIN_namelookup $url2_MIN_connect $url2_MIN_appconnect $url2_MIN_pretransfer $url2_MIN_starttransfer 
-# echo $url2_MAX_namelookup $url2_MAX_connect $url2_MAX_appconnect $url2_MAX_pretransfer $url2_MAX_starttransfer
+echo "Metric: time_namelookup | URL 1 | URL 2"
+echo "AVG: $url1_AVG_namelookup $url2_AVG_namelookup"
+echo "MIN: $url1_MIN_namelookup $url2_MIN_namelookup"
+echo "MAX: $url1_MAX_namelookup $url2_MAX_namelookup"
 
+echo "Metric: time_connect | URL 1 | URL 2"
+echo "AVG: $url1_AVG_connect $url2_AVG_connect"
+echo "MIN: $url1_MIN_connect $url2_MIN_connect"
+echo "MAX: $url1_MAX_connect $url2_MAX_connect"
+
+echo "Metric: time_appconnect | URL 1 | URL 2"
+echo "AVG: $url1_AVG_appconnect $url2_AVG_appconnect"
+echo "MIN: $url1_MIN_appconnect $url2_MIN_appconnect"
+echo "MAX: $url1_MAX_appconnect $url2_MAX_appconnect"
+
+echo "Metric: time_pretransfer | URL 1 | URL 2"
+echo "AVG: $url1_AVG_pretransfer $url2_AVG_pretransfer"
+echo "MIN: $url1_MIN_pretransfer $url2_MIN_pretransfer"
+echo "MAX: $url1_MAX_pretransfer $url2_MAX_pretransfer"
+
+echo "Metric: time_starttransfer | URL 1 | URL 2"
+echo "AVG: $url1_AVG_starttransfer $url2_AVG_starttransfer"
+echo "MIN: $url1_MIN_starttransfer $url2_MIN_starttransfer"
+echo "MAX: $url1_MAX_starttransfer $url2_MAX_starttransfer"
 

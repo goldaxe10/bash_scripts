@@ -32,11 +32,16 @@
 # time_connect=$(echo "${arr_results[1]} - ${arr_results[0]}" | bc)
 # echo $time_connect
 
+# Создание "псевдомногомерного массива"
+# arr=("1 2 3" "one")
+# arr1=($(echo "${arr[0]}"))
+# echo ${arr1[@]}
 
-xyz=0.9666666
+# Определить длину строки
+# myvar="some string"
+# size=${#myvar} 
 
-echo $xyz
-
-#yz=$(echo "$xyz / 7" | bc | sed -e 's/^\./0./' -e 's/^-\./-0./')
-xyz=$(bc<<<"scale=10;$xyz/7" | sed -e 's/^\./0./' -e 's/^-\./-0./')
-echo $xyz
+a=10
+b=1211111111
+let "c = $a % $b"
+echo $c
