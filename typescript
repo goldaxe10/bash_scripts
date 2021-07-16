@@ -1,0 +1,810 @@
+Script started on 2021-07-16 14:14:28+05:00 [TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="220" LINES="10"]
+]0;v@vubuntu: ~/Git/bash_scripts[01;32mv@vubuntu[00m:[01;34m~/Git/bash_scripts[00m$ man awk
+[?1049h[22;0;0t[?1h=MAWK(1)                                                                                              USER COMMANDS                                                                                             MAWK(1)[m
+[m
+[1mNAME[0m[m
+       mawk - pattern scanning and text processing language[m
+[m
+[1mSYNOPSIS[0m[m
+       [1mmawk[0m [-[1mW[0m [4moption[24m] [-[1mF[0m [4mvalue[24m] [-[1mv[0m [4mvar=value[24m] [--] 'program text' [file ...][m
+       [1mmawk[0m [-[1mW[0m [4moption[24m] [-[1mF[0m [4mvalue[24m] [-[1mv[0m [4mvar=value[24m] [-[1mf[0m [4mprogram-file[24m] [--] [file ...][m
+[m
+[7m Manual page awk(1) line 1 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[K[7m Manual page awk(1) line 1 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[K[7m Manual page awk(1) line 1 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[K[7m Manual page awk(1) line 1 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[K[7m Manual page awk(1) line 1 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[K[7m Manual page awk(1) line 1 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[K[7m Manual page awk(1) line 1 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[K[7m Manual page awk(1) line 1 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[K[7m Manual page awk(1) line 1 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[K[7m Manual page awk(1) line 1 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[K[7m Manual page awk(1) line 1 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[K[7m Manual page awk(1) line 1 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[K[7m Manual page awk(1) line 1 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[K[7m Manual page awk(1) line 1 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[K[7m Manual page awk(1) line 1 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[K[7m Manual page awk(1) line 1 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[K[7m Manual page awk(1) line 1 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[K[7m Manual page awk(1) line 1 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[K[7m Manual page awk(1) line 1 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[K[7m Manual page awk(1) line 1 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[K[7m Manual page awk(1) line 1 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[K[7m Manual page awk(1) line 1 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[K[7m Manual page awk(1) line 1 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[K[7m Manual page awk(1) line 1 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[K[7m Manual page awk(1) line 1 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[K[7m Manual page awk(1) line 1 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[K[7m Manual page awk(1) line 1 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[K[7m Manual page awk(1) line 1 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[K[7m Manual page awk(1) line 1 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[K[7m Manual page awk(1) line 1 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[K[7m Manual page awk(1) line 1 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[K[7m Manual page awk(1) line 1 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[K[7m Manual page awk(1) line 1 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[K[7m Manual page awk(1) line 1 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[K[7m Manual page awk(1) line 1 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[K[7m Manual page awk(1) line 1 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[K[7m Manual page awk(1) line 1 (press h for help or q to quit)[27m[K...skipping...
+MAWK(1)                                                                                              USER COMMANDS                                                                                             MAWK(1)[m
+[m
+[1mNAME[0m[m
+       mawk - pattern scanning and text processing language[m
+[m
+[1mSYNOPSIS[0m[m
+       [1mmawk[0m [-[1mW[0m [4moption[24m] [-[1mF[0m [4mvalue[24m] [-[1mv[0m [4mvar=value[24m] [--] 'program text' [file ...][m
+       [1mmawk[0m [-[1mW[0m [4moption[24m] [-[1mF[0m [4mvalue[24m] [-[1mv[0m [4mvar=value[24m] [-[1mf[0m [4mprogram-file[24m] [--] [file ...][m
+[m
+[1mDESCRIPTION[0m[m
+       [1mmawk[0m  is  an  interpreter  for  the AWK Programming Language.  The AWK language is useful for manipulation of data files, text retrieval and processing, and for prototyping and experimenting with algorithms.[m
+       [1mmawk[0m is a [4mnew[24m [4mawk[24m meaning it implements the AWK language as defined in Aho, Kernighan and Weinberger, [4mThe[24m [4mAWK[24m [4mProgramming[24m [4mLanguage,[24m Addison-Wesley Publishing, 1988 (hereafter referred to as  the  AWK  book.)[m
+       [1mmawk[0m conforms to the POSIX 1003.2 (draft 11.3) definition of the AWK language which contains a few features not described in the AWK book, and [1mmawk[0m provides a small number of extensions.[m
+[m
+       An AWK program is a sequence of [4mpattern[24m [4m{action}[24m pairs and function definitions.  Short programs are entered on the command line usually enclosed in ' ' to avoid shell interpretation.  Longer programs can be[m
+       read in from a file with the -f option.  Data  input is read from the list of files on the command line or from standard input when the list is empty.  The input is broken into records as determined  by  the[m
+       record separator variable, [1mRS[0m.  Initially, [1mRS[0m = “\n” and records are synonymous with lines.  Each record is compared against each [4mpattern[24m and if it matches, the program text for [4m{action}[24m is executed.[m
+[m
+[1mOPTIONS[0m[m
+       -[1mF[0m [4mvalue[24m       sets the field separator, [1mFS[0m, to [4mvalue[24m.[m
+[m
+       -[1mf[0m [4mfile[24m        Program text is read from [4mfile[24m instead of from the command line.  Multiple [1m-f[0m options are allowed.[m
+[m
+       -[1mv[0m [4mvar=value[24m   assigns [4mvalue[24m to program variable [4mvar[24m.[m
+[m
+       --             indicates the unambiguous end of options.[m
+[m
+       The above options will be available with any POSIX compatible implementation of AWK.  Implementation specific options are prefaced with [1m-W[0m.  [1mmawk[0m provides these:[m
+[m
+       -[1mW[0m dump        writes an assembler like listing of the internal representation of the program to stdout and exits 0 (on successful compilation).[m
+[m
+       -[1mW[0m exec [4mfile[24m   Program text is read from [4mfile[24m and this is the last option.[m
+[m
+                      This  is  a useful alternative to -[1mf[0m on systems that support the [1m#![0m  “magic number” convention for executable scripts.  Those implicitly pass the pathname of the script itself as the final pa‐[m
+                      rameter, and expect no more than one “-” option on the [1m#![0m line.  Because [1mmawk[0m can combine multiple -[1mW[0m options separated by commas, you can use this option  when  an  additional  -[1mW[0m  option  is[m
+                      needed.[m
+[m
+       -[1mW[0m help        prints a usage message to stderr and exits (same as “-[1mW[0m usage”).[m
+[m
+       -[1mW[0m interactive sets unbuffered writes to stdout and line buffered reads from stdin.  Records from stdin are lines regardless of the value of [1mRS[0m.[m
+[m
+       -[1mW[0m posix_space forces [1mmawk[0m not to consider '\n' to be space.[m
+[m
+       -[1mW[0m random=[4mnum[24m  calls [1msrand[0m with the given parameter (and overrides the auto-seeding behavior).[m
+[m
+       -[1mW[0m sprintf=[4mnum[24m adjusts the size of [1mmawk[0m's internal sprintf buffer to [4mnum[24m bytes.  More than rare use of this option indicates [1mmawk[0m should be recompiled.[m
+[m
+       -[1mW[0m usage       prints a usage message to stderr and exits (same as “-[1mW[0m help”).[m
+[m
+       -[1mW[0m version     [1mmawk[0m writes its version and copyright to stdout and compiled limits to stderr and exits 0.[m
+[m
+       [1mmawk[0m accepts abbreviations for any of these options, e.g., “-[1mW[0m v” and “-[1mW[0mv” both tell [1mmawk[0m to show its version.[m
+[m
+       [1mmawk[0m  allows  multiple  [1m-W[0m options to be combined by separating the options with commas, e.g., -Wsprint=2000,posix.  This is useful for executable [1m#![0m  “magic number” invocations in which only one argument is[m
+       supported, e.g., -[1mWinteractive,exec[0m.[m
+[m
+[1mTHE[0m [1mAWK[0m [1mLANGUAGE[0m[m
+[7m Manual page awk(1) line 1 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K   [1m1.[0m [1mProgram[0m [1mstructure[0m[m
+[7m Manual page awk(1) line 2 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       An AWK program is a sequence of [4mpattern[24m [4m{action}[24m pairs and user function definitions.[m
+[7m Manual page awk(1) line 3 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page awk(1) line 4 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       A pattern can be:[m
+[7m Manual page awk(1) line 5 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K            [1mBEGIN[0m[m
+[7m Manual page awk(1) line 6 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K            [1mEND[0m[m
+[7m Manual page awk(1) line 7 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K            expression[m
+[7m Manual page awk(1) line 8 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K            expression , expression[m
+[7m Manual page awk(1) line 9 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page awk(1) line 10 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       One, but not both, of [4mpattern[24m [4m{action}[24m can be omitted.  If [4m{action}[24m is omitted it is implicitly { print }.  If [4mpattern[24m is omitted, then it is implicitly matched.  [1mBEGIN[0m and [1mEND[0m patterns require an action.[m
+[7m Manual page awk(1) line 11 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page awk(1) line 12 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       Statements are terminated by newlines, semi-colons or both.  Groups of statements such as actions or loop bodies are blocked via { ... } as in C.  The last statement in a block  doesn't  need  a  terminator.[m
+[7m Manual page awk(1) line 13 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       Blank  lines  have  no  meaning;  an empty statement is terminated with a semi-colon.  Long statements can be continued with a backslash, \.  A statement can be broken without a backslash after a comma, left[m
+[7m Manual page awk(1) line 14 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       brace, &&, ||, [1mdo[0m, [1melse[0m, the right parenthesis of an [1mif[0m, [1mwhile[0m or [1mfor[0m statement, and the right parenthesis of a function definition.  A comment starts with # and extends to, but does not include the  end  of[m
+[7m Manual page awk(1) line 15 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       line.[m
+[7m Manual page awk(1) line 16 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page awk(1) line 17 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       The following statements control program flow inside blocks.[m
+[7m Manual page awk(1) line 18 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page awk(1) line 19 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K            [1mif[0m ( [4mexpr[24m ) [4mstatement[24m[m
+[7m Manual page awk(1) line 20 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page awk(1) line 21 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K            [1mif[0m ( [4mexpr[24m ) [4mstatement[24m [1melse[0m [4mstatement[24m[m
+[7m Manual page awk(1) line 22 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page awk(1) line 23 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K            [1mwhile[0m ( [4mexpr[24m ) [4mstatement[24m[m
+[7m Manual page awk(1) line 24 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page awk(1) line 25 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K            [1mdo[0m [4mstatement[24m [1mwhile[0m ( [4mexpr[24m )[m
+[7m Manual page awk(1) line 26 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page awk(1) line 27 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K            [1mfor[0m ( [4mopt_expr[24m ; [4mopt_expr[24m ; [4mopt_expr[24m ) [4mstatement[24m[m
+[7m Manual page awk(1) line 28 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page awk(1) line 29 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K            [1mfor[0m ( [4mvar[24m [1min[0m [4marray[24m ) [4mstatement[24m[m
+[7m Manual page awk(1) line 30 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page awk(1) line 31 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K            [1mcontinue[0m[m
+[7m Manual page awk(1) line 32 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page awk(1) line 33 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K            [1mbreak[0m[m
+[7m Manual page awk(1) line 34 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page awk(1) line 35 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K   [1m2.[0m [1mData[0m [1mtypes,[0m [1mconversion[0m [1mand[0m [1mcomparison[0m[m
+[7m Manual page awk(1) line 36 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       There  are two basic data types, numeric and string.  Numeric constants can be integer like -2, decimal like 1.08, or in scientific notation like -1.1e4 or .28E-3.  All numbers are represented internally and[m
+[7m Manual page awk(1) line 37 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       all computations are done in floating point arithmetic.  So for example, the expression 0.2e2 == 20 is true and true is represented as 1.0.[m
+[7m Manual page awk(1) line 38 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page awk(1) line 39 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       String constants are enclosed in double quotes.[m
+[7m Manual page awk(1) line 40 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page awk(1) line 41 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K                                                                                       "This is a string with a newline at the end.\n"[m
+[7m Manual page awk(1) line 42 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page awk(1) line 43 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       Strings can be continued across a line by escaping (\) the newline.  The following escape sequences are recognized.[m
+[7m Manual page awk(1) line 44 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page awk(1) line 45 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K            \\        \[m
+[7m Manual page awk(1) line 46 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K            \"        "[m
+[7m Manual page awk(1) line 47 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K            \a        alert, ascii 7[m
+[7m Manual page awk(1) line 48 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K            \b        backspace, ascii 8[m
+[7m Manual page awk(1) line 49 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K            \t        tab, ascii 9[m
+[7m Manual page awk(1) line 50 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K            \n        newline, ascii 10[m
+[7m Manual page awk(1) line 51 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K            \v        vertical tab, ascii 11[m
+[7m Manual page awk(1) line 52 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K            \f        formfeed, ascii 12[m
+[7m Manual page awk(1) line 53 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K            \r        carriage return, ascii 13[m
+[7m Manual page awk(1) line 54 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K            \ddd      1, 2 or 3 octal digits for ascii ddd[m
+[7m Manual page awk(1) line 55 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K            \xhh      1 or 2 hex digits for ascii  hh[m
+[7m Manual page awk(1) line 56 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page awk(1) line 57 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       If you escape any other character \c, you get \c, i.e., [1mmawk[0m ignores the escape.[m
+[7m Manual page awk(1) line 58 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page awk(1) line 59 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       There are really three basic data types; the third is [4mnumber[24m [4mand[24m [4mstring[24m which has both a numeric value and a string value at the same time.  User defined variables come into existence when  first  referenced[m
+[7m Manual page awk(1) line 60 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       and  are initialized to [4mnull[24m, a number and string value which has numeric value 0 and string value "".  Non-trivial number and string typed data come from input and are typically stored in fields.  (See sec‐[m
+[7m Manual page awk(1) line 61 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       tion 4).[m
+[7m Manual page awk(1) line 62 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page awk(1) line 63 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       The type of an expression is determined by its context and automatic type conversion occurs if needed.  For example, to evaluate the statements[m
+[7m Manual page awk(1) line 64 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page awk(1) line 65 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K            y = x + 2  ;  z = x  "hello"[m
+[7m Manual page awk(1) line 66 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page awk(1) line 67 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       The value stored in variable y will be typed numeric.  If x is not numeric, the value read from x is converted to numeric before it is added to 2 and stored in y.  The value stored  in  variable  z  will  be[m
+[7m Manual page awk(1) line 68 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       typed  string,  and the value of x will be converted to string if necessary and concatenated with "hello".  (Of course, the value and type stored in x is not changed by any conversions.)  A string expression[m
+[7m Manual page awk(1) line 69 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       is converted to numeric using its longest numeric prefix as with [1matof[0m(3).  A numeric expression is converted to string by replacing [4mexpr[24m with [1msprintf(CONVFMT[0m, [4mexpr[24m), unless [4mexpr[24m can  be  represented  on  the[m
+[7m Manual page awk(1) line 70 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       host machine as an exact integer then it is converted to [1msprintf[0m("%d", [4mexpr[24m).  [1mSprintf()[0m is an AWK built-in that duplicates the functionality of [1msprintf[0m(3), and [1mCONVFMT[0m is a built-in variable used for inter‐[m
+[7m Manual page awk(1) line 71 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       nal conversion from number to string and initialized to "%.6g".  Explicit type conversions can be forced, [4mexpr[24m "" is string and [4mexpr[24m+0 is numeric.[m
+[7m Manual page awk(1) line 72 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page awk(1) line 73 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       To evaluate, [4mexpr[24m1 [1mrel-op[0m [4mexpr[24m2, if both operands are numeric or number and string then the comparison is numeric; if both operands are string the comparison is string; if one operand  is  string,  the  non-[m
+[7m Manual page awk(1) line 74 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       string operand is converted and the comparison is string.  The result is numeric, 1 or 0.[m
+[7m Manual page awk(1) line 75 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page awk(1) line 76 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       In boolean contexts such as, [1mif[0m ( [4mexpr[24m ) [4mstatement[24m, a string expression evaluates true if and only if it is not the empty string ""; numeric values if and only if not numerically zero.[m
+[7m Manual page awk(1) line 77 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page awk(1) line 78 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K   [1m3.[0m [1mRegular[0m [1mexpressions[0m[m
+[7m Manual page awk(1) line 79 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       In the AWK language, records, fields and strings are often tested for matching a [4mregular[24m [4mexpression[24m.  Regular expressions are enclosed in slashes, and[m
+[7m Manual page awk(1) line 80 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page awk(1) line 81 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K            [4mexpr[24m ~ /[4mr[24m/[m
+[7m Manual page awk(1) line 82 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page awk(1) line 83 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       is  an  AWK  expression that evaluates to 1 if [4mexpr[24m “matches” [4mr[24m, which means a substring of [4mexpr[24m is in the set of strings defined by [4mr[24m.  With no match the expression evaluates to 0; replacing ~ with the “not[m
+[7m Manual page awk(1) line 84 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       match” operator, !~ , reverses the meaning.  As  pattern-action pairs,[m
+[7m Manual page awk(1) line 85 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page awk(1) line 86 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K            /[4mr[24m/ { [4maction[24m }   and   [1m$0[0m ~ /[4mr[24m/ { [4maction[24m }[m
+[7m Manual page awk(1) line 87 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page awk(1) line 88 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       are the same, and for each input record that matches [4mr[24m, [4maction[24m is executed.  In fact, /[4mr[24m/ is an AWK expression that is equivalent to ([1m$0[0m ~ /[4mr[24m/) anywhere except when on the right side of a match  operator  or[m
+[7m Manual page awk(1) line 89 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       passed as an argument to a built-in function that expects a regular expression argument.[m
+[7m Manual page awk(1) line 90 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page awk(1) line 91 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       AWK uses extended regular expressions as with the [1m-E[0m option of [1mgrep[0m(1).  The regular expression metacharacters, i.e., those with special meaning in regular expressions are[m
+[7m Manual page awk(1) line 92 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page awk(1) line 93 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K            \ ^ $ . [ ] | ( ) * + ?[m
+[7m Manual page awk(1) line 94 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page awk(1) line 95 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       Regular expressions are built up from characters as follows:[m
+[7m Manual page awk(1) line 96 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page awk(1) line 97 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K            [4mc[24m            matches any non-metacharacter [4mc[24m.[m
+[7m Manual page awk(1) line 98 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page awk(1) line 99 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K            \[4mc[24m           matches a character defined by the same escape sequences used in string constants or the literal character [4mc[24m if \[4mc[24m is not an escape sequence.[m
+[7m Manual page awk(1) line 100 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page awk(1) line 101 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K            .            matches any character (including newline).[m
+[7m Manual page awk(1) line 102 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page awk(1) line 103 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K            ^            matches the front of a string.[m
+[7m Manual page awk(1) line 104 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page awk(1) line 105 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K            $            matches the back of a string.[m
+[7m Manual page awk(1) line 106 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page awk(1) line 107 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K            [c1c2c3...]  matches any character in the class c1c2c3... .  An interval of characters is denoted c1-c2 inside a class [...].[m
+[7m Manual page awk(1) line 108 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page awk(1) line 109 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K            [^c1c2c3...] matches any character not in the class c1c2c3...[m
+[7m Manual page awk(1) line 110 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page awk(1) line 111 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       Regular expressions are built up from other regular expressions as follows:[m
+[7m Manual page awk(1) line 112 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page awk(1) line 113 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K            [4mr[24m1[4mr[24m2         matches [4mr[24m1 followed immediately by [4mr[24m2 (concatenation).[m
+[7m Manual page awk(1) line 114 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page awk(1) line 115 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K            [4mr[24m1 | [4mr[24m2      matches [4mr[24m1 or [4mr[24m2 (alternation).[m
+[7m Manual page awk(1) line 116 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page awk(1) line 117 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K            [4mr[24m*           matches [4mr[24m repeated zero or more times.[m
+[7m Manual page awk(1) line 118 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page awk(1) line 119 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K            [4mr[24m+           matches [4mr[24m repeated one or more times.[m
+[7m Manual page awk(1) line 120 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page awk(1) line 121 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K            [4mr[24m?           matches [4mr[24m zero or once.[m
+[7m Manual page awk(1) line 122 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page awk(1) line 123 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K            ([4mr[24m)          matches [4mr[24m, providing grouping.[m
+[7m Manual page awk(1) line 124 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page awk(1) line 125 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       The increasing precedence of operators is alternation, concatenation and unary (*, + or ?).[m
+[7m Manual page awk(1) line 126 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page awk(1) line 127 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       For example,[m
+[7m Manual page awk(1) line 128 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page awk(1) line 129 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K            /^[_a-zA-Z][_a-zA-Z0-9]*$/  and[m
+[7m Manual page awk(1) line 130 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K            /^[-+]?([0-9]+\.?|\.[0-9])[0-9]*([eE][-+]?[0-9]+)?$/[m
+[7m Manual page awk(1) line 131 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page awk(1) line 132 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       are matched by AWK identifiers and AWK numeric constants respectively.  Note that “.” has to be escaped to be recognized as a decimal point, and that metacharacters are not special inside character classes.[m
+[7m Manual page awk(1) line 133 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page awk(1) line 134 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       Any  expression can be used on the right hand side of the ~ or !~ operators or passed to a built-in that expects a regular expression.  If needed, it is converted to string, and then interpreted as a regular[m
+[7m Manual page awk(1) line 135 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       expression.  For example,[m
+[7m Manual page awk(1) line 136 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page awk(1) line 137 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K            BEGIN { identifier = "[_a-zA-Z][_a-zA-Z0-9]*" }[m
+[7m Manual page awk(1) line 138 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page awk(1) line 139 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K            $0 ~ "^" identifier[m
+[7m Manual page awk(1) line 140 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page awk(1) line 141 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       prints all lines that start with an AWK identifier.[m
+[7m Manual page awk(1) line 142 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page awk(1) line 143 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       [1mmawk[0m recognizes the empty regular expression, //, which matches the empty string and hence is matched by any string at the front, back and between every character.  For example,[m
+[7m Manual page awk(1) line 144 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page awk(1) line 145 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K            echo  abc | mawk { gsub(//, "X") ; print }[m
+[7m Manual page awk(1) line 146 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K            XaXbXcX[m
+[7m Manual page awk(1) line 147 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page awk(1) line 148 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K   [1m4.[0m [1mRecords[0m [1mand[0m [1mfields[0m[m
+[7m Manual page awk(1) line 149 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       Records are read in one at a time, and stored in the [4mfield[24m variable [1m$0[0m.  The record is split into [4mfields[24m which are stored in [1m$1[0m, [1m$2[0m, ..., [1m$NF[0m.  The built-in variable [1mNF[0m is set to the number of fields, and [1mNR[0m[m
+[7m Manual page awk(1) line 150 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       and [1mFNR[0m are incremented by 1.  Fields above [1m$NF[0m are set to "".[m
+[7m Manual page awk(1) line 151 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page awk(1) line 152 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       Assignment to [1m$0[0m causes the fields and [1mNF[0m to be recomputed.  Assignment to [1mNF[0m or to a field causes [1m$0[0m to be reconstructed by concatenating the [1m$i's[0m separated by [1mOFS[0m.  Assignment to a field with index greater[m
+[7m Manual page awk(1) line 153 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       than [1mNF[0m, increases [1mNF[0m and causes [1m$0[0m to be reconstructed.[m
+[7m Manual page awk(1) line 154 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page awk(1) line 155 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       Data input stored in fields is string, unless the entire field has numeric form and then the type is number and string.  For example,[m
+[7m Manual page awk(1) line 156 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page awk(1) line 157 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K            echo 24 24E |[m
+[7m Manual page awk(1) line 158 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K            mawk '{ print($1>100, $1>"100", $2>100, $2>"100") }'[m
+[7m Manual page awk(1) line 159 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K            0 1 1 1[m
+[7m Manual page awk(1) line 160 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page awk(1) line 161 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       [1m$0[0m and [1m$2[0m are string and [1m$1[0m is number and string.  The first comparison is numeric, the second is string, the third is string (100 is converted to "100"), and the last is string.[m
+[7m Manual page awk(1) line 162 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page awk(1) line 163 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K   [1m5.[0m [1mExpressions[0m [1mand[0m [1moperators[0m[m
+[7m Manual page awk(1) line 164 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       The expression syntax is similar to C.  Primary expressions are numeric constants, string constants, variables, fields, arrays and function calls.  The identifier for a variable, array or function can  be  a[m
+[7m Manual page awk(1) line 165 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       sequence of letters, digits and underscores, that does not start with a digit.  Variables are not declared; they exist when first referenced and are initialized to [4mnull[24m.[m
+[7m Manual page awk(1) line 166 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page awk(1) line 167 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       New expressions are composed with the following operators in order of increasing precedence.[m
+[7m Manual page awk(1) line 168 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page awk(1) line 169 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K            [4massignment[24m          =  +=  -=  *=  /=  %=  ^=[m
+[7m Manual page awk(1) line 170 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K            [4mconditional[24m         ?  :[m
+[7m Manual page awk(1) line 171 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K            [4mlogical[24m [4mor[24m          ||[m
+[7m Manual page awk(1) line 172 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K            [4mlogical[24m [4mand[24m         &&[m
+[7m Manual page awk(1) line 173 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K            [4marray[24m [4mmembership[24m    [1min[0m[m
+[7m Manual page awk(1) line 174 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K            [4mmatching[24m       ~   !~[m
+[7m Manual page awk(1) line 175 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K            [4mrelational[24m          <  >   <=  >=  ==  !=[m
+[7m Manual page awk(1) line 176 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K            [4mconcatenation[24m       (no explicit operator)[m
+[7m Manual page awk(1) line 177 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K            [4madd[24m [4mops[24m             +  -[m
+[7m Manual page awk(1) line 178 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K            [4mmul[24m [4mops[24m             *  /  %[m
+[7m Manual page awk(1) line 179 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K            [4munary[24m               +  -[m
+[7m Manual page awk(1) line 180 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K            [4mlogical[24m [4mnot[24m         ![m
+[7m Manual page awk(1) line 181 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K            [4mexponentiation[24m      ^[m
+[7m Manual page awk(1) line 182 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K            [4minc[24m [4mand[24m [4mdec[24m         ++ -- (both post and pre)[m
+[7m Manual page awk(1) line 183 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K            [4mfield[24m               $[m
+[7m Manual page awk(1) line 184 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page awk(1) line 185 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       Assignment, conditional and exponentiation associate right to left; the other operators associate left to right.  Any expression can be parenthesized.[m
+[7m Manual page awk(1) line 186 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page awk(1) line 187 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K   [1m6.[0m [1mArrays[0m[m
+[7m Manual page awk(1) line 188 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       Awk  provides one-dimensional arrays.  Array elements are expressed as [4marray[24m[[4mexpr[24m].  [4mExpr[24m is internally converted to string type, so, for example, A[1] and A["1"] are the same element and the actual index is[m
+[7m Manual page awk(1) line 189 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       "1".  Arrays indexed by strings are called associative arrays.  Initially an array is empty; elements exist when first accessed.  An expression, [4mexpr[24m [1min[0m [4marray[24m evaluates to 1 if [4marray[24m[[4mexpr[24m] exists, else to 0.[m
+[7m Manual page awk(1) line 190 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page awk(1) line 191 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       There is a form of the [1mfor[0m statement that loops over each index of an array.[m
+[7m Manual page awk(1) line 192 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page awk(1) line 193 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K            [1mfor[0m ( [4mvar[24m [1min[0m [4marray[24m ) [4mstatement[24m[m
+[7m Manual page awk(1) line 194 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page awk(1) line 195 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       sets [4mvar[24m to each index of [4marray[24m and executes [4mstatement[24m.  The order that [4mvar[24m transverses the indices of [4marray[24m is not defined.[m
+[7m Manual page awk(1) line 196 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page awk(1) line 197 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       The statement, [1mdelete[0m [4marray[24m[[4mexpr[24m], causes [4marray[24m[[4mexpr[24m] not to exist.  [1mmawk[0m supports an extension, [1mdelete[0m [4marray[24m, which deletes all elements of [4marray[24m.[m
+[7m Manual page awk(1) line 198 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page awk(1) line 199 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       Multidimensional arrays are synthesized with concatenation using the built-in variable [1mSUBSEP[0m.  [4marray[24m[[4mexpr[24m1,[4mexpr[24m2] is equivalent to [4marray[24m[[4mexpr[24m1 [1mSUBSEP[0m [4mexpr[24m2].  Testing for a multidimensional element  uses  a[m
+[7m Manual page awk(1) line 200 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       parenthesized index, such as[m
+[7m Manual page awk(1) line 201 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page awk(1) line 202 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K            if ( (i, j) in A )  print A[i, j][m
+[7m Manual page awk(1) line 203 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page awk(1) line 204 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K   [1m7.[0m [1mBuiltin-variables[0m[m
+[7m Manual page awk(1) line 205 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       The following variables are built-in and initialized before program execution.[m
+[7m Manual page awk(1) line 206 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page awk(1) line 207 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K            [1mARGC[0m      number of command line arguments.[m
+[7m Manual page awk(1) line 208 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page awk(1) line 209 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K            [1mARGV[0m      array of command line arguments, 0..ARGC-1.[m
+[7m Manual page awk(1) line 210 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page awk(1) line 211 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K            [1mCONVFMT[0m   format for internal conversion of numbers to string, initially = "%.6g".[m
+[7m Manual page awk(1) line 212 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page awk(1) line 213 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K            [1mENVIRON[0m   array indexed by environment variables.  An environment string, [4mvar=value[24m is stored as [1mENVIRON[0m[[4mvar[24m] = [4mvalue[24m.[m
+[7m Manual page awk(1) line 214 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page awk(1) line 215 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K            [1mFILENAME[0m  name of the current input file.[m
+[7m Manual page awk(1) line 216 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page awk(1) line 217 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K            [1mFNR[0m       current record number in [1mFILENAME[0m.[m
+[7m Manual page awk(1) line 218 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page awk(1) line 219 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K            [1mFS[0m        splits records into fields as a regular expression.[m
+[7m Manual page awk(1) line 220 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page awk(1) line 221 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K            [1mNF[0m        number of fields in the current record.[m
+[7m Manual page awk(1) line 222 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page awk(1) line 223 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K            [1mNR[0m        current record number in the total input stream.[m
+[7m Manual page awk(1) line 224 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page awk(1) line 225 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K            [1mOFMT[0m      format for printing numbers; initially = "%.6g".[m
+[7m Manual page awk(1) line 226 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page awk(1) line 227 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K            [1mOFS[0m       inserted between fields on output, initially = " ".[m
+[7m Manual page awk(1) line 228 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page awk(1) line 229 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K            [1mORS[0m       terminates each record on output, initially = "\n".[m
+[7m Manual page awk(1) line 230 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page awk(1) line 231 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K            [1mRLENGTH[0m   length set by the last call to the built-in function, [1mmatch()[0m.[m
+[7m Manual page awk(1) line 232 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page awk(1) line 233 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K            [1mRS[0m        input record separator, initially = "\n".[m
+[7m Manual page awk(1) line 234 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page awk(1) line 235 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K            [1mRSTART[0m    index set by the last call to [1mmatch()[0m.[m
+[7m Manual page awk(1) line 236 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page awk(1) line 237 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K            [1mSUBSEP[0m    used to build multiple array subscripts, initially = "\034".[m
+[7m Manual page awk(1) line 238 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page awk(1) line 239 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K   [1m8.[0m [1mBuilt-in[0m [1mfunctions[0m[m
+[7m Manual page awk(1) line 240 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       String functions[m
+[7m Manual page awk(1) line 241 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page awk(1) line 242 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K            gsub([4mr,s,t[24m)  gsub([4mr,s[24m)[m
+[7m Manual page awk(1) line 243 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K                   Global  substitution,  every  match  of regular expression [4mr[24m in variable [4mt[24m is replaced by string [4ms[24m.  The number of replacements is returned.  If [4mt[24m is omitted, [1m$0[0m is used.  An & in the replacement[m
+[7m Manual page awk(1) line 244 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K                   string [4ms[24m is replaced by the matched substring of [4mt[24m.  \& and \\ put  literal & and \, respectively, in the replacement string.[m
+[7m Manual page awk(1) line 245 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page awk(1) line 246 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K            index([4ms,t[24m)[m
+[7m Manual page awk(1) line 247 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K                   If [4mt[24m is a substring of [4ms[24m, then the position where [4mt[24m starts is returned, else 0 is returned.  The first character of [4ms[24m is in position 1.[m
+[7m Manual page awk(1) line 248 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page awk(1) line 249 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K            length([4ms[24m)[m
+[7m Manual page awk(1) line 250 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K                   Returns the length of string or array.  [4ms[24m.[m
+[7m Manual page awk(1) line 251 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page awk(1) line 252 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K            match([4ms,r[24m)[m
+[7m Manual page awk(1) line 253 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K                   Returns the index of the first longest match of regular expression [4mr[24m in string [4ms[24m.  Returns 0 if no match.  As a side effect, [1mRSTART[0m is set to the return value.  [1mRLENGTH[0m is set to  the  length  of[m
+[7m Manual page awk(1) line 254 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K                   the match or -1 if no match.  If the empty string is matched, [1mRLENGTH[0m is set to 0, and 1 is returned if the match is at the front, and length([4ms[24m)+1 is returned if the match is at the back.[m
+[7m Manual page awk(1) line 255 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page awk(1) line 256 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K            split([4ms,A,r[24m)  split([4ms,A[24m)[m
+[7m Manual page awk(1) line 257 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K                   String  [4ms[24m  is  split  into fields by regular expression [4mr[24m and the fields are loaded into array [4mA[24m.  The number of fields is returned.  See section 11 below for more detail.  If [4mr[24m is omitted, [1mFS[0m is[m
+[7m Manual page awk(1) line 258 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K                   used.[m
+[7m Manual page awk(1) line 259 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page awk(1) line 260 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K            sprintf([4mformat,expr-list[24m)[m
+[7m Manual page awk(1) line 261 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K                   Returns a string constructed from [4mexpr-list[24m according to [4mformat[24m.  See the description of printf() below.[m
+[7m Manual page awk(1) line 262 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page awk(1) line 263 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K            sub([4mr,s,t[24m)  sub([4mr,s[24m)[m
+[7m Manual page awk(1) line 264 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K                   Single substitution, same as gsub() except at most one substitution.[m
+[7m Manual page awk(1) line 265 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page awk(1) line 266 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K            substr([4ms,i,n[24m)  substr([4ms,i[24m)[m
+[7m Manual page awk(1) line 267 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K                   Returns the substring of string [4ms[24m, starting at index [4mi[24m, of length [4mn[24m.  If [4mn[24m is omitted, the suffix of [4ms[24m, starting at [4mi[24m is returned.[m
+[7m Manual page awk(1) line 268 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page awk(1) line 269 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K            tolower([4ms[24m)[m
+[7m Manual page awk(1) line 270 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K                   Returns a copy of [4ms[24m with all upper case characters converted to lower case.[m
+[7m Manual page awk(1) line 271 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page awk(1) line 272 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K            toupper([4ms[24m)[m
+[7m Manual page awk(1) line 273 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K                   Returns a copy of [4ms[24m with all lower case characters converted to upper case.[m
+[7m Manual page awk(1) line 274 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page awk(1) line 275 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       Time functions[m
+[7m Manual page awk(1) line 276 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page awk(1) line 277 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       These are available on systems which support the corresponding C [1mmktime[0m and [1mstrftime[0m functions:[m
+[7m Manual page awk(1) line 278 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page awk(1) line 279 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K            mktime([4mspecification[24m)[m
+[7m Manual page awk(1) line 280 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K                   converts a date specification to a timestamp with the same units as [1msystime[0m.  The date specification is a string containing the components of the date as decimal integers:[m
+[7m Manual page awk(1) line 281 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page awk(1) line 282 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K                   YYYY[m
+[7m Manual page awk(1) line 283 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K                      the year, e.g., 2012[m
+[7m Manual page awk(1) line 284 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page awk(1) line 285 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K                   MM the month of the year starting at 1[m
+[7m Manual page awk(1) line 286 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page awk(1) line 287 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K                   DD the day of the month starting at 1[m
+[7m Manual page awk(1) line 288 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page awk(1) line 289 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K                   HH hour (0-23)[m
+[7m Manual page awk(1) line 290 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page awk(1) line 291 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K                   MM minute (0-59)[m
+[7m Manual page awk(1) line 292 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page awk(1) line 293 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K                   SS seconds (0-59)[m
+[7m Manual page awk(1) line 294 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page awk(1) line 295 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K                   DST[m
+[7m Manual page awk(1) line 296 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K                      tells how to treat timezone versus daylight savings time:[m
+[7m Manual page awk(1) line 297 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page awk(1) line 298 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K                        positive[m
+[7m Manual page awk(1) line 299 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K                           DST is in effect[m
+[7m Manual page awk(1) line 300 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page awk(1) line 301 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K                        zero (default)[m
+[7m Manual page awk(1) line 302 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K                           DST is not in effect[m
+[7m Manual page awk(1) line 303 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page awk(1) line 304 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K                        negative[m
+[7m Manual page awk(1) line 305 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K                           mktime() should (use timezone information and system databases to) attempt  to determine whether DST is in effect at the specified time.[m
+[7m Manual page awk(1) line 306 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page awk(1) line 307 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K            strftime([[4mformat[24m [, [4mtimestamp[24m [, [4mutc[24m ]]])[m
+[7m Manual page awk(1) line 308 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K                   formats the given timestamp using the format (passed to the C [1mstrftime[0m function):[m
+[7m Manual page awk(1) line 309 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page awk(1) line 310 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K                   •   If the [4mformat[24m parameter is missing, "%c" is used.[m
+[7m Manual page awk(1) line 311 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page awk(1) line 312 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K                   •   If the [4mtimestamp[24m parameter is missing, the current value from [1msystime[0m is used.[m
+[7m Manual page awk(1) line 313 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page awk(1) line 314 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K                   •   If the [4mutc[24m parameter is present and nonzero, the result is in UTC.  Otherwise local time is used.[m
+[7m Manual page awk(1) line 315 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page awk(1) line 316 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K            systime()[m
+[7m Manual page awk(1) line 317 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K                   returns the current time of day as the number of seconds since the Epoch (1970-01-01 00:00:00 UTC on POSIX systems).[m
+[7m Manual page awk(1) line 318 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page awk(1) line 319 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       Arithmetic functions[m
+[7m Manual page awk(1) line 320 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page awk(1) line 321 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K            atan2([4my,x[24m)     Arctan of [4my[24m/[4mx[24m between -pi and pi.[m
+[7m Manual page awk(1) line 322 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page awk(1) line 323 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K            cos([4mx[24m)         Cosine function, [4mx[24m in radians.[m
+[7m Manual page awk(1) line 324 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page awk(1) line 325 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K            exp([4mx[24m)         Exponential function.[m
+[7m Manual page awk(1) line 326 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page awk(1) line 327 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K            int([4mx[24m)         Returns [4mx[24m truncated towards zero.[m
+[7m Manual page awk(1) line 328 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page awk(1) line 329 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K            log([4mx[24m)         Natural logarithm.[m
+[7m Manual page awk(1) line 330 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page awk(1) line 331 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K            rand()         Returns a random number between zero and one.[m
+[7m Manual page awk(1) line 332 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page awk(1) line 333 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K            sin([4mx[24m)         Sine function, [4mx[24m in radians.[m
+[7m Manual page awk(1) line 334 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page awk(1) line 335 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K            sqrt([4mx[24m)        Returns square root of [4mx[24m.[m
+[7m Manual page awk(1) line 336 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page awk(1) line 337 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K            srand([4mexpr[24m)  srand()[m
+[7m Manual page awk(1) line 338 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K                   Seeds the random number generator, using the clock if [4mexpr[24m is omitted, and returns the value of the previous seed.  Srand([4mexpr[24m) is useful for repeating pseudo random sequences.[m
+[7m Manual page awk(1) line 339 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page awk(1) line 340 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K                   Note: [1mmawk[0m is normally configured to seed the random number generator from the clock at startup, making it unnecessary to call srand().  This feature can be suppressed via conditional compile, or[m
+[7m Manual page awk(1) line 341 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K                   overridden using the [1m-Wrandom[0m option.[m
+[7m Manual page awk(1) line 342 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page awk(1) line 343 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K   [1m9.[0m [1mInput[0m [1mand[0m [1moutput[0m[m
+[7m Manual page awk(1) line 344 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       There are two output statements, [1mprint[0m and [1mprintf[0m.[m
+[7m Manual page awk(1) line 345 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page awk(1) line 346 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K            print  writes [1m$0[0m  [1mORS[0m to standard output.[m
+[7m Manual page awk(1) line 347 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page awk(1) line 348 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K            print [4mexpr[24m1, [4mexpr[24m2, ..., [4mexpr[24mn[m
+[7m Manual page awk(1) line 349 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K                   writes [4mexpr[24m1 [1mOFS[0m [4mexpr[24m2 [1mOFS[0m ... [4mexpr[24mn [1mORS[0m to standard output.  Numeric expressions are converted to string with [1mOFMT[0m.[m
+[7m Manual page awk(1) line 350 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page awk(1) line 351 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K            printf [4mformat,[24m [4mexpr-list[24m[m
+[7m Manual page awk(1) line 352 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K                   duplicates  the printf C library function writing to standard output.  The complete ANSI C format specifications are recognized with conversions %c, %d, %e, %E, %f, %g, %G, %i, %o, %s, %u, %x, %X[m
+[7m Manual page awk(1) line 353 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K                   and %%, and conversion qualifiers h and l.[m
+[7m Manual page awk(1) line 354 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page awk(1) line 355 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       The argument list to print or printf can optionally be enclosed in parentheses.  Print formats numbers using [1mOFMT[0m or "%d" for exact integers.  "%c" with a numeric argument  prints  the  corresponding  8  bit[m
+[7m Manual page awk(1) line 356 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       character,  with  a string argument it prints the first character of the string.  The output of print and printf can be redirected to a file or command by appending > [4mfile[24m, >> [4mfile[24m or | [4mcommand[24m to the end of[m
+[7m Manual page awk(1) line 357 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       the print statement.  Redirection opens [4mfile[24m or [4mcommand[24m only once, subsequent redirections append to the already open stream.  By convention, [1mmawk[0m associates the filename[m
+[7m Manual page awk(1) line 358 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page awk(1) line 359 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K          •   "/dev/stderr" with stderr,[m
+[7m Manual page awk(1) line 360 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page awk(1) line 361 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K          •   "/dev/stdout" with stdout,[m
+[7m Manual page awk(1) line 362 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page awk(1) line 363 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K          •   "-" and "/dev/stdin" with stdin.[m
+[7m Manual page awk(1) line 364 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page awk(1) line 365 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       The association with stderr is especially useful because it allows print and printf to be redirected to stderr.  These names can also be passed to functions.[m
+[7m Manual page awk(1) line 366 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page awk(1) line 367 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       The input function [1mgetline[0m has the following variations.[m
+[7m Manual page awk(1) line 368 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page awk(1) line 369 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K            getline[m
+[7m Manual page awk(1) line 370 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K                   reads into [1m$0[0m, updates the fields, [1mNF[0m, [1mNR[0m and [1mFNR[0m.[m
+[7m Manual page awk(1) line 371 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page awk(1) line 372 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K            getline < [4mfile[24m[m
+[7m Manual page awk(1) line 373 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K                   reads into [1m$0[0m from [4mfile[24m, updates the fields and [1mNF[0m.[m
+[7m Manual page awk(1) line 374 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page awk(1) line 375 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K            getline [4mvar[24m[m
+[7m Manual page awk(1) line 376 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K                   reads the next record into [4mvar[24m, updates [1mNR[0m and [1mFNR[0m.[m
+[7m Manual page awk(1) line 377 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page awk(1) line 378 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K            getline [4mvar[24m < [4mfile[24m[m
+[7m Manual page awk(1) line 379 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K                   reads the next record of [4mfile[24m into [4mvar[24m.[m
+[7m Manual page awk(1) line 380 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page awk(1) line 381 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K            [4mcommand[24m | getline[m
+[7m Manual page awk(1) line 382 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K                   pipes a record from [4mcommand[24m into [1m$0[0m and updates the fields and [1mNF[0m.[m
+[7m Manual page awk(1) line 383 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page awk(1) line 384 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K            [4mcommand[24m | getline [4mvar[24m[m
+[7m Manual page awk(1) line 385 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K                   pipes a record from [4mcommand[24m into [4mvar[24m.[m
+[7m Manual page awk(1) line 386 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page awk(1) line 387 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       Getline returns 0 on end-of-file, -1 on error, otherwise 1.[m
+[7m Manual page awk(1) line 388 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page awk(1) line 389 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       Commands on the end of pipes are executed by /bin/sh.[m
+[7m Manual page awk(1) line 390 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page awk(1) line 391 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       The function [1mclose[0m([4mexpr[24m) closes the file or pipe associated with [4mexpr[24m.  Close returns 0 if [4mexpr[24m is an open file, the exit status if [4mexpr[24m is a piped command, and -1 otherwise.  Close is used to reread a  file[m
+[7m Manual page awk(1) line 392 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       or command, make sure the other end of an output pipe is finished or conserve file resources.[m
+[7m Manual page awk(1) line 393 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page awk(1) line 394 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       The  function  [1mfflush[0m([4mexpr[24m) flushes the output file or pipe associated with [4mexpr[24m.  Fflush returns 0 if [4mexpr[24m is an open output stream else -1.  Fflush without an argument flushes stdout.  Fflush with an empty[m
+[7m Manual page awk(1) line 395 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       argument ("") flushes all open output.[m
+[7m Manual page awk(1) line 396 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page awk(1) line 397 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       The function [1msystem[0m([4mexpr[24m) uses the C runtime [1msystem[0m call to execute [4mexpr[24m and returns the corresponding wait status of the command as follows:[m
+[7m Manual page awk(1) line 398 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page awk(1) line 399 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       •   if the [1msystem[0m call failed, setting the status to -1, [4mmawk[24m returns that value.[m
+[7m Manual page awk(1) line 400 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page awk(1) line 401 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       •   if the command exited normally, [4mmawk[24m returns its exit-status.[m
+[7m Manual page awk(1) line 402 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page awk(1) line 403 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       •   if the command exited due to a signal such as [1mSIGHUP[0m, [4mmawk[24m returns the signal number plus 256.[m
+[7m Manual page awk(1) line 404 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page awk(1) line 405 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       Changes made to the [1mENVIRON[0m array are not passed to commands executed with [1msystem[0m or pipes.[m
+[7m Manual page awk(1) line 406 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page awk(1) line 407 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K   [1m10.[0m [1mUser[0m [1mdefined[0m [1mfunctions[0m[m
+[7m Manual page awk(1) line 408 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       The syntax for a user defined function is[m
+[7m Manual page awk(1) line 409 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page awk(1) line 410 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K            [1mfunction[0m name( [4margs[24m ) { [4mstatements[24m }[m
+[7m Manual page awk(1) line 411 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page awk(1) line 412 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       The function body can contain a return statement[m
+[7m Manual page awk(1) line 413 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page awk(1) line 414 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K            [1mreturn[0m [4mopt_expr[24m[m
+[7m Manual page awk(1) line 415 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page awk(1) line 416 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       A return statement is not required.  Function calls may be nested or recursive.  Functions are passed expressions by value and arrays by reference.  Extra arguments serve as local variables and are  initial‐[m
+[7m Manual page awk(1) line 417 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       ized to [4mnull[24m.  For example, csplit([4ms,A[24m) puts each character of [4ms[24m into array [4mA[24m and returns the length of [4ms[24m.[m
+[7m Manual page awk(1) line 418 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page awk(1) line 419 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K            function csplit(s, A,    n, i)[m
+[7m Manual page awk(1) line 420 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K            {[m
+[7m Manual page awk(1) line 421 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              n = length(s)[m
+[7m Manual page awk(1) line 422 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              for( i = 1 ; i <= n ; i++ ) A[i] = substr(s, i, 1)[m
+[7m Manual page awk(1) line 423 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              return n[m
+[7m Manual page awk(1) line 424 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K            }[m
+[7m Manual page awk(1) line 425 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page awk(1) line 426 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       Putting  extra space between passed arguments and local variables is conventional.  Functions can be referenced before they are defined, but the function name and the '(' of the arguments must touch to avoid[m
+[7m Manual page awk(1) line 427 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       confusion with concatenation.[m
+[7m Manual page awk(1) line 428 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page awk(1) line 429 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       A function parameter is normally a scalar value (number or string).  If there is a forward reference to a function using an array as a parameter, the function's corresponding parameter will be treated as  an[m
+[7m Manual page awk(1) line 430 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       array.[m
+[7m Manual page awk(1) line 431 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page awk(1) line 432 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K   [1m11.[0m [1mSplitting[0m [1mstrings,[0m [1mrecords[0m [1mand[0m [1mfiles[0m[m
+[7m Manual page awk(1) line 433 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       Awk programs use the same algorithm to split strings into arrays with split(), and records into fields on [1mFS[0m.  [1mmawk[0m uses essentially the same algorithm to split files into records on [1mRS[0m.[m
+[7m Manual page awk(1) line 434 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page awk(1) line 435 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       Split([4mexpr,A,sep[24m) works as follows:[m
+[7m Manual page awk(1) line 436 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page awk(1) line 437 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K          (1)  If [4msep[24m is omitted, it is replaced by [1mFS[0m.  [4mSep[24m can be an expression or regular expression.  If it is an expression of non-string type, it is converted to string.[m
+[7m Manual page awk(1) line 438 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page awk(1) line 439 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K          (2)  If  [4msep[24m = " " (a single space), then <SPACE> is trimmed from the front and back of [4mexpr[24m, and [4msep[24m becomes <SPACE>.  [1mmawk[0m defines <SPACE> as the regular expression /[ \t\n]+/.  Otherwise [4msep[24m is treated[m
+[7m Manual page awk(1) line 440 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K               as a regular expression, except that meta-characters are ignored for a string of length 1, e.g., split(x, A, "*") and split(x, A, /\*/) are the same.[m
+[7m Manual page awk(1) line 441 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page awk(1) line 442 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K          (3)  If [4mexpr[24m is not string, it is converted to string.  If [4mexpr[24m is then the empty string "", split() returns 0 and [4mA[24m is set empty.  Otherwise, all non-overlapping, non-null and longest matches of  [4msep[24m  in[m
+[7m Manual page awk(1) line 443 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K               [4mexpr[24m,  separate  [4mexpr[24m  into  fields which are loaded into [4mA[24m.  The fields are placed in A[1], A[2], ..., A[n] and split() returns n, the number of fields which is the number of matches plus one.  Data[m
+[7m Manual page awk(1) line 444 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K               placed in [4mA[24m that looks numeric is typed number and string.[m
+[7m Manual page awk(1) line 445 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page awk(1) line 446 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       Splitting records into fields works the same except the pieces are loaded into [1m$1[0m, [1m$2[0m,..., [1m$NF[0m.  If [1m$0[0m is empty, [1mNF[0m is set to 0 and all [1m$i[0m to "".[m
+[7m Manual page awk(1) line 447 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page awk(1) line 448 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       [1mmawk[0m splits files into records by the same algorithm, but with the slight difference that [1mRS[0m is really a terminator instead of a separator.  ([1mORS[0m is really a terminator too).[m
+[7m Manual page awk(1) line 449 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page awk(1) line 450 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K            E.g., if [1mFS[0m = “:+” and [1m$0[0m = “a::b:” , then [1mNF[0m = 3 and [1m$1[0m = “a”, [1m$2[0m = “b” and [1m$3[0m = "", but if “a::b:” is the contents of an input file and [1mRS[0m = “:+”, then there are two records “a” and “b”.[m
+[7m Manual page awk(1) line 451 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page awk(1) line 452 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       [1mRS[0m = " " is not special.[m
+[7m Manual page awk(1) line 453 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page awk(1) line 454 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       If [1mFS[0m = "", then [1mmawk[0m breaks the record into individual characters, and, similarly, split([4ms,A,[24m"") places the individual characters of [4ms[24m into [4mA[24m.[m
+[7m Manual page awk(1) line 455 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page awk(1) line 456 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K   [1m12.[0m [1mMulti-line[0m [1mrecords[0m[m
+[7m Manual page awk(1) line 457 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       Since [1mmawk[0m interprets [1mRS[0m as a regular expression, multi-line records are easy.  Setting [1mRS[0m = "\n\n+", makes one or more blank lines separate records.  If [1mFS[0m = " " (the default), then single newlines, by  the[m
+[7m Manual page awk(1) line 458 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       rules for <SPACE> above, become space and single newlines are field separators.[m
+[7m Manual page awk(1) line 459 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page awk(1) line 460 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K            For example, if[m
+[7m Manual page awk(1) line 461 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page awk(1) line 462 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K            •   a file is "a b\nc\n\n",[m
+[7m Manual page awk(1) line 463 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page awk(1) line 464 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K            •   [1mRS[0m = "\n\n+" and[m
+[7m Manual page awk(1) line 465 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page awk(1) line 466 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K            •   [1mFS[0m = " ",[m
+[7m Manual page awk(1) line 467 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page awk(1) line 468 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K            then there is one record “a b\nc” with three fields “a”, “b” and “c”:[m
+[7m Manual page awk(1) line 469 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page awk(1) line 470 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K            •   Changing [1mFS[0m = “\n”, gives two fields “a b” and “c”;[m
+[7m Manual page awk(1) line 471 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page awk(1) line 472 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K            •   changing [1mFS[0m = “”, gives one field identical to the record.[m
+[7m Manual page awk(1) line 473 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page awk(1) line 474 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       If  you  want lines with spaces or tabs to be considered blank, set [1mRS[0m = “\n([ \t]*\n)+”.  For compatibility with other awks, setting [1mRS[0m = "" has the same effect as if blank lines are stripped from the front[m
+[7m Manual page awk(1) line 475 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       and back of files and then records are determined as if [1mRS[0m = “\n\n+”.  POSIX requires that “\n” always separates records when [1mRS[0m = "" regardless of the value of [1mFS[0m.  [1mmawk[0m does not  support  this  convention,[m
+[7m Manual page awk(1) line 476 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       because defining “\n” as <SPACE> makes it unnecessary.[m
+[7m Manual page awk(1) line 477 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page awk(1) line 478 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       Most of the time when you change [1mRS[0m for multi-line records, you will also want to change [1mORS[0m to “\n\n” so the record spacing is preserved on output.[m
+[7m Manual page awk(1) line 479 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page awk(1) line 480 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K   [1m13.[0m [1mProgram[0m [1mexecution[0m[m
+[7m Manual page awk(1) line 481 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       This  section  describes the order of program execution.  First [1mARGC[0m is set to the total number of command line arguments passed to the execution phase of the program.  [1mARGV[0][0m is set the name of the AWK in‐[m
+[7m Manual page awk(1) line 482 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       terpreter and [1mARGV[1][0m ...  [1mARGV[ARGC-1][0m holds the remaining command line arguments exclusive of options and program source.  For example with[m
+[7m Manual page awk(1) line 483 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page awk(1) line 484 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K            mawk  -f  prog  v=1  A  t=hello  B[m
+[7m Manual page awk(1) line 485 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page awk(1) line 486 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       [1mARGC[0m = 5 with [1mARGV[0][0m = "mawk", [1mARGV[1][0m = "v=1", [1mARGV[2][0m = "A", [1mARGV[3][0m = "t=hello" and [1mARGV[4][0m = "B".[m
+[7m Manual page awk(1) line 487 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page awk(1) line 488 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       Next, each [1mBEGIN[0m block is executed in order.  If the program consists entirely of [1mBEGIN[0m blocks, then execution terminates, else an input stream is opened and execution continues.  If [1mARGC[0m equals 1, the input[m
+[7m Manual page awk(1) line 489 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       stream is set to stdin, else  the command line arguments [1mARGV[1][0m ...  [1mARGV[ARGC-1][0m are examined for a file argument.[m
+[7m Manual page awk(1) line 490 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page awk(1) line 491 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       The command line arguments divide into three sets: file arguments, assignment arguments and empty strings "".  An assignment has the form [4mvar[24m=[4mstring[24m.  When an [1mARGV[i][0m is examined as a possible file argument,[m
+[7m Manual page awk(1) line 492 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       if it is empty it is skipped; if it is an assignment argument, the assignment to [4mvar[24m takes place and [1mi[0m skips to the next argument; else [1mARGV[i][0m is opened for input.  If it fails to open, execution terminates[m
+[7m Manual page awk(1) line 493 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       with exit code 2.  If no command line argument is a file argument, then input comes from stdin.  Getline in a [1mBEGIN[0m action opens input.  “-” as a file argument denotes stdin.[m
+[7m Manual page awk(1) line 494 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page awk(1) line 495 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       Once an input stream is open, each input record is tested against each [4mpattern[24m, and if it matches, the associated [4maction[24m is executed.  An expression pattern matches if it is boolean true (see the end of sec‐[m
+[7m Manual page awk(1) line 496 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       tion 2).  A [1mBEGIN[0m pattern matches before any input has been read, and an [1mEND[0m pattern matches after all input has been read.  A range pattern, [4mexpr[24m1,[4mexpr[24m2 , matches every record between the match of [4mexpr[24m1 and[m
+[7m Manual page awk(1) line 497 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       the match [4mexpr[24m2 inclusively.[m
+[7m Manual page awk(1) line 498 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page awk(1) line 499 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       When  end  of  file occurs on the input stream, the remaining command line arguments are examined for a file argument, and if there is one it is opened, else the [1mEND[0m [4mpattern[24m is considered matched and all [1mEND[0m[m
+[7m Manual page awk(1) line 500 (press h for help or q to quit)[27m[K[K[?1l>[?1049l[23;0;0t]0;v@vubuntu: ~/Git/bash_scripts[01;32mv@vubuntu[00m:[01;34m~/Git/bash_scripts[00m$ [K]0;v@vubuntu: ~/Git/bash_scripts[01;32mv@vubuntu[00m:[01;34m~/Git/bash_scripts[00m$ man awk
+[?1049h[22;0;0t[?1h=MAWK(1)                                                                                              USER COMMANDS                                                                                             MAWK(1)[m
+[m
+[1mNAME[0m[m
+       mawk - pattern scanning and text processing language[m
+[m
+[1mSYNOPSIS[0m[m
+       [1mmawk[0m [-[1mW[0m [4moption[24m] [-[1mF[0m [4mvalue[24m] [-[1mv[0m [4mvar=value[24m] [--] 'program text' [file ...][m
+       [1mmawk[0m [-[1mW[0m [4moption[24m] [-[1mF[0m [4mvalue[24m] [-[1mv[0m [4mvar=value[24m] [-[1mf[0m [4mprogram-file[24m] [--] [file ...][m
+[m
+[1mDESCRIPTION[0m[m
+       [1mmawk[0m  is  an  interpreter  for  the AWK Programming Language.  The AWK language is useful for manipulation of data files, text retrieval and processing, and for prototyping and experimenting with algorithms.[m
+       [1mmawk[0m is a [4mnew[24m [4mawk[24m meaning it implements the AWK language as defined in Aho, Kernighan and Weinberger, [4mThe[24m [4mAWK[24m [4mProgramming[24m [4mLanguage,[24m Addison-Wesley Publishing, 1988 (hereafter referred to as  the  AWK  book.)[m
+       [1mmawk[0m conforms to the POSIX 1003.2 (draft 11.3) definition of the AWK language which contains a few features not described in the AWK book, and [1mmawk[0m provides a small number of extensions.[m
+[m
+       An AWK program is a sequence of [4mpattern[24m [4m{action}[24m pairs and function definitions.  Short programs are entered on the command line usually enclosed in ' ' to avoid shell interpretation.  Longer programs can be[m
+[7m Manual page awk(1) line 1 (press h for help or q to quit)[27m[K[K[?1l>[?1049l[23;0;0t]0;v@vubuntu: ~/Git/bash_scripts[01;32mv@vubuntu[00m:[01;34m~/Git/bash_scripts[00m$ man awk
+[?1049h[22;0;0t[?1h=MAWK(1)                                                                                              USER COMMANDS                                                                                             MAWK(1)[m
+[m
+[1mNAME[0m[m
+       mawk - pattern scanning and text processing language[m
+[m
+[1mSYNOPSIS[0m[m
+       [1mmawk[0m [-[1mW[0m [4moption[24m] [-[1mF[0m [4mvalue[24m] [-[1mv[0m [4mvar=value[24m] [--] 'program text' [file ...][m
+       [1mmawk[0m [-[1mW[0m [4moption[24m] [-[1mF[0m [4mvalue[24m] [-[1mv[0m [4mvar=value[24m] [-[1mf[0m [4mprogram-file[24m] [--] [file ...][m
+[m
+[1mDESCRIPTION[0m[m
+       [1mmawk[0m  is  an  interpreter  for  the AWK Programming Language.  The AWK language is useful for manipulation of data files, text retrieval and processing, and for prototyping and experimenting with algorithms.[m
+       [1mmawk[0m is a [4mnew[24m [4mawk[24m meaning it implements the AWK language as defined in Aho, Kernighan and Weinberger, [4mThe[24m [4mAWK[24m [4mProgramming[24m [4mLanguage,[24m Addison-Wesley Publishing, 1988 (hereafter referred to as  the  AWK  book.)[m
+       [1mmawk[0m conforms to the POSIX 1003.2 (draft 11.3) definition of the AWK language which contains a few features not described in the AWK book, and [1mmawk[0m provides a small number of extensions.[m
+[m
+       An AWK program is a sequence of [4mpattern[24m [4m{action}[24m pairs and function definitions.  Short programs are entered on the command line usually enclosed in ' ' to avoid shell interpretation.  Longer programs can be[m
+[7m Manual page awk(1) line 1 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       read in from a file with the -f option.  Data  input is read from the list of files on the command line or from standard input when the list is empty.  The input is broken into records as determined  by  the[m
+[7m Manual page awk(1) line 2 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       record separator variable, [1mRS[0m.  Initially, [1mRS[0m = “\n” and records are synonymous with lines.  Each record is compared against each [4mpattern[24m and if it matches, the program text for [4m{action}[24m is executed.[m
+[7m Manual page awk(1) line 3 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page awk(1) line 4 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[1mOPTIONS[0m[m
+[7m Manual page awk(1) line 5 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       -[1mF[0m [4mvalue[24m       sets the field separator, [1mFS[0m, to [4mvalue[24m.[m
+[7m Manual page awk(1) line 6 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page awk(1) line 7 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       -[1mf[0m [4mfile[24m        Program text is read from [4mfile[24m instead of from the command line.  Multiple [1m-f[0m options are allowed.[m
+[7m Manual page awk(1) line 8 (press h for help or q to quit)[27m[K[K[?1l>[?1049l[23;0;0t]0;v@vubuntu: ~/Git/bash_scripts[01;32mv@vubuntu[00m:[01;34m~/Git/bash_scripts[00m$ man awk
+[?1049h[22;0;0t[?1h=MAWK(1)                                                                                              USER COMMANDS                                                                                             MAWK(1)[m
+[m
+[1mNAME[0m[m
+       mawk - pattern scanning and text processing language[m
+[m
+[1mSYNOPSIS[0m[m
+       [1mmawk[0m [-[1mW[0m [4moption[24m] [-[1mF[0m [4mvalue[24m] [-[1mv[0m [4mvar=value[24m] [--] 'program text' [file ...][m
+       [1mmawk[0m [-[1mW[0m [4moption[24m] [-[1mF[0m [4mvalue[24m] [-[1mv[0m [4mvar=value[24m] [-[1mf[0m [4mprogram-file[24m] [--] [file ...][m
+[m
+[1mDESCRIPTION[0m[m
+       [1mmawk[0m  is  an  interpreter  for  the AWK Programming Language.  The AWK language is useful for manipulation of data files, text retrieval and processing, and for prototyping and experimenting with algorithms.[m
+       [1mmawk[0m is a [4mnew[24m [4mawk[24m meaning it implements the AWK language as defined in Aho, Kernighan and Weinberger, [4mThe[24m [4mAWK[24m [4mProgramming[24m [4mLanguage,[24m Addison-Wesley Publishing, 1988 (hereafter referred to as  the  AWK  book.)[m
+       [1mmawk[0m conforms to the POSIX 1003.2 (draft 11.3) definition of the AWK language which contains a few features not described in the AWK book, and [1mmawk[0m provides a small number of extensions.[m
+[m
+       An AWK program is a sequence of [4mpattern[24m [4m{action}[24m pairs and function definitions.  Short programs are entered on the command line usually enclosed in ' ' to avoid shell interpretation.  Longer programs can be[m
+[7m Manual page awk(1) line 1 (press h for help or q to quit)[27m[K[K[?1l>[?1049l[23;0;0t]0;v@vubuntu: ~/Git/bash_scripts[01;32mv@vubuntu[00m:[01;34m~/Git/bash_scripts[00m$ man awk
+[?1049h[22;0;0t[?1h=MAWK(1)                                                                                              USER COMMANDS                                                                                             MAWK(1)[m
+[m
+[1mNAME[0m[m
+       mawk - pattern scanning and text processing language[m
+[m
+[1mSYNOPSIS[0m[m
+       [1mmawk[0m [-[1mW[0m [4moption[24m] [-[1mF[0m [4mvalue[24m] [-[1mv[0m [4mvar=value[24m] [--] 'program text' [file ...][m
+       [1mmawk[0m [-[1mW[0m [4moption[24m] [-[1mF[0m [4mvalue[24m] [-[1mv[0m [4mvar=value[24m] [-[1mf[0m [4mprogram-file[24m] [--] [file ...][m
+[m
+[1mDESCRIPTION[0m[m
+       [1mmawk[0m  is  an  interpreter  for  the AWK Programming Language.  The AWK language is useful for manipulation of data files, text retrieval and processing, and for prototyping and experimenting with algorithms.[m
+       [1mmawk[0m is a [4mnew[24m [4mawk[24m meaning it implements the AWK language as defined in Aho, Kernighan and Weinberger, [4mThe[24m [4mAWK[24m [4mProgramming[24m [4mLanguage,[24m Addison-Wesley Publishing, 1988 (hereafter referred to as  the  AWK  book.)[m
+       [1mmawk[0m conforms to the POSIX 1003.2 (draft 11.3) definition of the AWK language which contains a few features not described in the AWK book, and [1mmawk[0m provides a small number of extensions.[m
+[m
+       An AWK program is a sequence of [4mpattern[24m [4m{action}[24m pairs and function definitions.  Short programs are entered on the command line usually enclosed in ' ' to avoid shell interpretation.  Longer programs can be[m
+[7m Manual page awk(1) line 1 (press h for help or q to quit)[27m[K[K[?1l>[?1049l[23;0;0t]0;v@vubuntu: ~/Git/bash_scripts[01;32mv@vubuntu[00m:[01;34m~/Git/bash_scripts[00m$ man awkьфт фцлbash wiki.sh 
+0.243300
+]0;v@vubuntu: ~/Git/bash_scripts[01;32mv@vubuntu[00m:[01;34m~/Git/bash_scripts[00m$ bash wiki.sh [6Pman awkьфт фцлbash wiki.sh [3@script2[C[C[C[C
+Count of requests: 3
+script2.sh: line 239: -f: command not found
+
+real	0m0,001s
+user	0m0,000s
+sys	0m0,000s
+]0;v@vubuntu: ~/Git/bash_scripts[01;32mv@vubuntu[00m:[01;34m~/Git/bash_scripts[00m$ bash script2.sh 
+Count of requests: 3
+script2.sh: line 239: fg: no job control
+
+real	0m0,000s
+user	0m0,000s
+sys	0m0,000s
+]0;v@vubuntu: ~/Git/bash_scripts[01;32mv@vubuntu[00m:[01;34m~/Git/bash_scripts[00m$ bash script2.sh 
+Count of requests: 3
+script2.sh: line 239: /home/v/script2.sh: No such file or directory
+
+real	0m0,001s
+user	0m0,001s
+sys	0m0,000s
+]0;v@vubuntu: ~/Git/bash_scripts[01;32mv@vubuntu[00m:[01;34m~/Git/bash_scripts[00m$ bash script2.sh 
+Count of requests: 3
+^[[A
+real	0m0,000s
+user	0m0,000s
+sys	0m0,000s
+]0;v@vubuntu: ~/Git/bash_scripts[01;32mv@vubuntu[00m:[01;34m~/Git/bash_scripts[00m$ bash script2.sh [3Pwiki[C[C[C[C[3@script2[C[C[C[C
+Count of requests: 3
+
+real	0m0,000s
+user	0m0,000s
+sys	0m0,000s
+]0;v@vubuntu: ~/Git/bash_scripts[01;32mv@vubuntu[00m:[01;34m~/Git/bash_scripts[00m$ bash script2.sh 
+Count of requests: 3
+Пт 16 июл 2021 14:20:51 +05
+]0;v@vubuntu: ~/Git/bash_scripts[01;32mv@vubuntu[00m:[01;34m~/Git/bash_scripts[00m$ bash script2.sh 
+Count of requests: 3
+script2.sh: line 240: -f: command not found
+
+real	0m0,001s
+user	0m0,001s
+sys	0m0,000s
+]0;v@vubuntu: ~/Git/bash_scripts[01;32mv@vubuntu[00m:[01;34m~/Git/bash_scripts[00m$ bash script2.sh 
+Count of requests: 3
+script2.sh: line 241: stuff: command not found
+]0;v@vubuntu: ~/Git/bash_scripts[01;32mv@vubuntu[00m:[01;34m~/Git/bash_scripts[00m$ bash script2.sh 
+Count of requests: 3
+4
+]0;v@vubuntu: ~/Git/bash_scripts[01;32mv@vubuntu[00m:[01;34m~/Git/bash_scripts[00m$ bash script2.sh 
+Count of requests: 3
+5
+]0;v@vubuntu: ~/Git/bash_scripts[01;32mv@vubuntu[00m:[01;34m~/Git/bash_scripts[00m$ bash script2.sh 
+Count of requests: 3
+5
+]0;v@vubuntu: ~/Git/bash_scripts[01;32mv@vubuntu[00m:[01;34m~/Git/bash_scripts[00m$ bash script2.sh 
+Count of requests: 1
+1
+]0;v@vubuntu: ~/Git/bash_scripts[01;32mv@vubuntu[00m:[01;34m~/Git/bash_scripts[00m$ bash script2.sh 
+Count of requests: 20
+29
+]0;v@vubuntu: ~/Git/bash_scripts[01;32mv@vubuntu[00m:[01;34m~/Git/bash_scripts[00m$ bash script2.sh 
+Count of requests: 20
+^C
+]0;v@vubuntu: ~/Git/bash_scripts[01;32mv@vubuntu[00m:[01;34m~/Git/bash_scripts[00m$ bash script2.sh [3Pwiki[C[C[C[C
+1
+]0;v@vubuntu: ~/Git/bash_scripts[01;32mv@vubuntu[00m:[01;34m~/Git/bash_scripts[00m$ bash wiki.sh 
+10
+]0;v@vubuntu: ~/Git/bash_scripts[01;32mv@vubuntu[00m:[01;34m~/Git/bash_scripts[00m$ bash wiki.sh 
+^C
+]0;v@vubuntu: ~/Git/bash_scripts[01;32mv@vubuntu[00m:[01;34m~/Git/bash_scripts[00m$ bash wiki.sh 
+60
+]0;v@vubuntu: ~/Git/bash_scripts[01;32mv@vubuntu[00m:[01;34m~/Git/bash_scripts[00m$ bash wiki.sh 
+60
+wiki.sh: line 126: syntax error in conditional expression
+wiki.sh: line 126: syntax error near `60'
+wiki.sh: line 126: `if [[ $runtime >= 60 ]]'
+]0;v@vubuntu: ~/Git/bash_scripts[01;32mv@vubuntu[00m:[01;34m~/Git/bash_scripts[00m$ bash wiki.sh 
+60
+wiki.sh: line 126: syntax error in conditional expression
+wiki.sh: line 126: syntax error near `60'
+wiki.sh: line 126: `if [[ $runtime >= 60 ]]'
+]0;v@vubuntu: ~/Git/bash_scripts[01;32mv@vubuntu[00m:[01;34m~/Git/bash_scripts[00m$ bash wiki.sh 
+60
+wiki.sh: line 126: syntax error in conditional expression
+wiki.sh: line 126: syntax error near `"60"'
+wiki.sh: line 126: `if [[ "$runtime" >= "60" ]]'
+]0;v@vubuntu: ~/Git/bash_scripts[01;32mv@vubuntu[00m:[01;34m~/Git/bash_scripts[00m$ bash wiki.sh 
+60
+wiki.sh: line 126: syntax error in conditional expression
+wiki.sh: line 126: syntax error near `60'
+wiki.sh: line 126: `if [[ "$runtime" >= 60 ]]'
+]0;v@vubuntu: ~/Git/bash_scripts[01;32mv@vubuntu[00m:[01;34m~/Git/bash_scripts[00m$ bash wiki.sh 
+60
+1
+]0;v@vubuntu: ~/Git/bash_scripts[01;32mv@vubuntu[00m:[01;34m~/Git/bash_scripts[00m$ bash wiki.sh 
+60
+1
+]0;v@vubuntu: ~/Git/bash_scripts[01;32mv@vubuntu[00m:[01;34m~/Git/bash_scripts[00m$ bash wiki.sh 
+120
+2
+]0;v@vubuntu: ~/Git/bash_scripts[01;32mv@vubuntu[00m:[01;34m~/Git/bash_scripts[00m$ bash wiki.sh 
+2
+]0;v@vubuntu: ~/Git/bash_scripts[01;32mv@vubuntu[00m:[01;34m~/Git/bash_scripts[00m$ bash wiki.sh 
+Test est time: 0 h 2 m 0 s
+]0;v@vubuntu: ~/Git/bash_scripts[01;32mv@vubuntu[00m:[01;34m~/Git/bash_scripts[00m$ bash wiki.sh 
+Test est time: 0 h 2 m 0 s
+]0;v@vubuntu: ~/Git/bash_scripts[01;32mv@vubuntu[00m:[01;34m~/Git/bash_scripts[00m$ bash wiki.sh 
+Test est time: 0 h 2 m 0 s
+]0;v@vubuntu: ~/Git/bash_scripts[01;32mv@vubuntu[00m:[01;34m~/Git/bash_scripts[00m$ bash wiki.sh 
+Test est time: 0 h 0 m 59 s
+]0;v@vubuntu: ~/Git/bash_scripts[01;32mv@vubuntu[00m:[01;34m~/Git/bash_scripts[00m$ bash wiki.sh 
+Test est time: 0 h: 0 m: 59 s
+]0;v@vubuntu: ~/Git/bash_scripts[01;32mv@vubuntu[00m:[01;34m~/Git/bash_scripts[00m$ bash wiki.sh 
+Test est time: 0 h 0 m 59 s
+]0;v@vubuntu: ~/Git/bash_scripts[01;32mv@vubuntu[00m:[01;34m~/Git/bash_scripts[00m$ bash wiki.sh 
+Test est time: 0 h 1 m 0 s
+]0;v@vubuntu: ~/Git/bash_scripts[01;32mv@vubuntu[00m:[01;34m~/Git/bash_scripts[00m$ bash wiki.sh 
+Test est time: 0 h 2 m 0 s
+]0;v@vubuntu: ~/Git/bash_scripts[01;32mv@vubuntu[00m:[01;34m~/Git/bash_scripts[00m$ bash wiki.sh 
+Test est time: 0 h 20 m 0 s
+]0;v@vubuntu: ~/Git/bash_scripts[01;32mv@vubuntu[00m:[01;34m~/Git/bash_scripts[00m$ 5000
+5000: command not found
+]0;v@vubuntu: ~/Git/bash_scripts[01;32mv@vubuntu[00m:[01;34m~/Git/bash_scripts[00m$ 5000bash wiki.sh [3@script2[C[C[C[C
+Count of requests: 20
+^C
+]0;v@vubuntu: ~/Git/bash_scripts[01;32mv@vubuntu[00m:[01;34m~/Git/bash_scripts[00m$ bash script2.sh 5000[Kbash wiki.sh 
+Test est time: 0 h 83 m 0 s
+]0;v@vubuntu: ~/Git/bash_scripts[01;32mv@vubuntu[00m:[01;34m~/Git/bash_scripts[00m$ bash wiki.sh 
+Test est time: 0 h 66 m 0 s
+]0;v@vubuntu: ~/Git/bash_scripts[01;32mv@vubuntu[00m:[01;34m~/Git/bash_scripts[00m$ bash wiki.sh 
+Test est time: 0 h 60 m 0 s
+]0;v@vubuntu: ~/Git/bash_scripts[01;32mv@vubuntu[00m:[01;34m~/Git/bash_scripts[00m$ bash wiki.sh 
+Test est time: 0 h 0 m 3600 s
+]0;v@vubuntu: ~/Git/bash_scripts[01;32mv@vubuntu[00m:[01;34m~/Git/bash_scripts[00m$ bash wiki.sh 
+Test est time: 0 h 0 m 3600 s
+]0;v@vubuntu: ~/Git/bash_scripts[01;32mv@vubuntu[00m:[01;34m~/Git/bash_scripts[00m$ bash wiki.sh 
+Test est time: 0 h 59 m 0 s
+]0;v@vubuntu: ~/Git/bash_scripts[01;32mv@vubuntu[00m:[01;34m~/Git/bash_scripts[00m$ bash wiki.sh 
+Test est time: 0 h 59 m 0 s
+]0;v@vubuntu: ~/Git/bash_scripts[01;32mv@vubuntu[00m:[01;34m~/Git/bash_scripts[00m$ bash wiki.sh 
+Test est time: 0 h 0 m 3600 s
+]0;v@vubuntu: ~/Git/bash_scripts[01;32mv@vubuntu[00m:[01;34m~/Git/bash_scripts[00m$ bash wiki.sh 
+Test est time: 0 h 2 m 0 s
+]0;v@vubuntu: ~/Git/bash_scripts[01;32mv@vubuntu[00m:[01;34m~/Git/bash_scripts[00m$ bash wiki.sh 
+Test est time: 0 h 2 m 0 s
+]0;v@vubuntu: ~/Git/bash_scripts[01;32mv@vubuntu[00m:[01;34m~/Git/bash_scripts[00m$ bash wiki.sh 
+Test est time: 0 h 2 m 0 s
+1
+]0;v@vubuntu: ~/Git/bash_scripts[01;32mv@vubuntu[00m:[01;34m~/Git/bash_scripts[00m$ bash wiki.sh 
+Test est time: 0 h 2 m 0 s
+2
+]0;v@vubuntu: ~/Git/bash_scripts[01;32mv@vubuntu[00m:[01;34m~/Git/bash_scripts[00m$ bash wiki.sh 
+Test est time: 0 h 3 m 0 s
+0
+]0;v@vubuntu: ~/Git/bash_scripts[01;32mv@vubuntu[00m:[01;34m~/Git/bash_scripts[00m$ bash wiki.sh 
+Test est time: 0 h 3 m 0 s
+1
+]0;v@vubuntu: ~/Git/bash_scripts[01;32mv@vubuntu[00m:[01;34m~/Git/bash_scripts[00m$ bash wiki.sh 
+Test est time: 0 h 2 m 0 s
+59
+]0;v@vubuntu: ~/Git/bash_scripts[01;32mv@vubuntu[00m:[01;34m~/Git/bash_scripts[00m$ bash wiki.sh 
+Test est time: 0 h 2 m 59 s
+]0;v@vubuntu: ~/Git/bash_scripts[01;32mv@vubuntu[00m:[01;34m~/Git/bash_scripts[00m$ bash wiki.sh 
+wiki.sh: line 135: syntax error near unexpected token `else'
+wiki.sh: line 135: `    else'
+]0;v@vubuntu: ~/Git/bash_scripts[01;32mv@vubuntu[00m:[01;34m~/Git/bash_scripts[00m$ bash wiki.sh 
+wiki.sh: line 145: syntax error: unexpected end of file
+]0;v@vubuntu: ~/Git/bash_scripts[
