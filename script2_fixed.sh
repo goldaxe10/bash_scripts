@@ -4,7 +4,7 @@ set -euo pipefail
 start=`date +%s`
 echo "Count of requests:"
 read cnt_req
-cnt_req=10
+# cnt_req=10
 sleep_time=0.5
 
 
