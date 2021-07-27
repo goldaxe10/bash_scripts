@@ -9,7 +9,7 @@ while true; do
 		break
 	elif [[ "${arr_data[0]}" -eq "${arr_data[1]}" ]]
 	then
-		echo "${arr_data[0]}"
+		echo "GSD is ${arr_data[0]}"
 	else
 		if [[ "${arr_data[0]}" -gt "${arr_data[1]}" ]]
 		then
@@ -20,7 +20,7 @@ while true; do
 	for (( i=$iter; i>=1; i-- )); do
 		if (( ${arr_data[0]} % $i  == 0 &&  ${arr_data[1]} % $i  == 0 ))
 		then
-			echo $i
+			echo "GCD is $i"
 			break
 		fi	
 	done
