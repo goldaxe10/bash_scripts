@@ -1,0 +1,37 @@
+git commit -a	Stages files automatically
+git log -p	Produces patch text
+git show	Shows various objects
+git diff	Is similar to the Linux `diff` command, and can show the differences in various commits
+git diff --staged	An alias to --cached, this will show all staged files compared to the named commit
+git add -p	Allows a user to interactively review patches to add to the current commit
+git mv	Similar to the Linux `mv` command, this moves a file
+git rm	Similar to the Linux `rm` command, this deletes, or removes a file
+
+git checkout эффективно используется для переключения ветвей.
+
+git reset в основном сбрасывает репо, отбрасывая некоторые изменения. Это довольно сложно понять, поэтому чтение примеров в документации может быть немного полезнее.
+
+В Интернете есть и другие полезные статьи, в которых обсуждаются более агрессивные подходы к сбросу репо .
+
+git commit --amend используется для внесения изменений в коммиты постфактум, что может быть полезно для создания заметок о данном коммите.
+
+git revert делает новую фиксацию, которая эффективно откатывает предыдущую фиксацию. Это немного похоже на команду отмены.
+
+Есть несколько способов откатить коммиты в Git.
+
+Есть несколько интересных соображений о том, как хранятся данные объекта git, например, об использовании sha-1. 
+
+Не стесняйтесь читать здесь:
+
+https://en.wikipedia.org/wiki/SHA-1
+https://github.blog/2017-03-20-sha-1-collision-detection-on-github-com/
+
+git branch	Used to manage branches
+git branch <name> 	Creates the branch
+git branch -d <name>	Deletes the branch
+git branch -D <name>	Forcibly deletes the branch
+git checkout <branch> 	Switches to a branch.
+git checkout -b <branch>	Creates a new branch and switches to it.
+git merge <branch> 	Merge joins branches together. 
+git merge --abort	If there are merge conflicts (meaning files are incompatible), --abort can be used to abort the merge action.
+git log --graph --oneline	This shows a summarized view of the commit history for a repo.
