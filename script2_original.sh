@@ -2,7 +2,6 @@
 set -euo pipefail
 
 start=`date +%s`
-echo "Count of requests:"
 cnt_req=100
 sleep_time=0.5
 
@@ -50,19 +49,10 @@ func_avg(){
 # в $1 передаётся пецентиль, который нам необходимо вычислить. В $2 передаётся количество запросов.
 # В итоге функция возвращает индекс массива с округлением в большую сторону, если мы получили вещественное значение.
 func_percentile(){
-	x1=$(bc<<<"scale=2;$1/100*$2" | sed -e 's/^\./0./' -e 's/^-\./-0./')
-    x2=$(echo $x1 | awk '{print int($x1+0.5)}')
-    x3=$(bc<<<"scale=2;$x2-$x1" | sed -e 's/^\./0./' -e 's/^-\./-0./')
-    x4=$(bc<<<"scale=2;$x3-1" | sed -e 's/^\./0./' -e 's/^-\./-0./')
-    if [[ "$x4" == "1" ]]
-        then
-            ind_res=$x2
-            echo $ind_res
-        else
-		x5=$(bc<<<"scale=2;$x1+$x4" | sed -e 's/^\./0./' -e 's/^-\./-0./')
-            ind_res=$(echo $x5 | awk '{print int($1+0.5)}')
-            echo $ind_res
-        fi
+        x1=$(bc<<<"scale=2;$1/100*$2" | sed -e 's/^\./0./' -e 's/^-\./-0./')
+        x2=$(echo $x1 | awk '{print int($x1+0.999)}')
+        ind_res=$x2
+        echo "$ind_res"
 }
 
 
