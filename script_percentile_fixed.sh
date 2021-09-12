@@ -1,8 +1,8 @@
-#!/bin/bash
+#!/usr/local/bin bash
 set -euo pipefail
 
 start=`date +%s`
-cnt_req=100
+cnt_req=10
 sleep_time=0.5
 
 
@@ -11,6 +11,7 @@ arr_url=("https://68.img.avito.st/image/1/rS2IB7axAcS-sIPJ3gH0BXGkAcA0pgvG" "htt
 # Курл запрос
 func_metrics(){
 	curl -sS -o /dev/null -w "%{time_namelookup} %{time_connect} %{time_appconnect} %{time_pretransfer} %{time_starttransfer}" $1
+
 	sleep $sleep_time
 }
 
@@ -36,9 +37,9 @@ func_bubble_sort(){
 
 # Функция вычисления среднего значения
 func_avg(){
-    tmp_avg=0.0
-    local -n tmp_arr=$1
-    for (( cnt=0; cnt<${#tmp_arr[@]}; cnt++ )); do
+    local -n tmp_avg=0.0
+    tmp_arr=$1
+    for (( cnt=0; cnt<${#tmp_arr[*]}; cnt++ )); do
         tmp_avg=$(echo "$tmp_avg + ${tmp_arr[$cnt]}" | bc | sed -e 's/^\./0./' -e 's/^-\./-0./')
     done
     tmp_avg=$(bc<<<"scale=6;$tmp_avg/$cnt_req" | sed -e 's/^\./0./' -e 's/^-\./-0./')
